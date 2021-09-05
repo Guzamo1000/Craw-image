@@ -2,14 +2,14 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-driver = webdriver.Chrome('E:\Code\Craw_image\chromedriver.exe')
-driver.get('https://www.google.com/')
+driver = webdriver.Chrome('path Chrome Driver')
+driver.get('link website')
 
-box = driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input')
-box.send_keys('persions using smartphone')
+box = driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input') #element search in google
+box.send_keys('Keyword')
 box.send_keys(Keys.ENTER)
 
-driver.find_element_by_xpath('//*[@id="hdtb-msb"]/div[1]/div/div[2]/a').click()
+driver.find_element_by_xpath('//*[@id="hdtb-msb"]/div[1]/div/div[2]/a').click() #element image in google
 
 
 #Will keep scrolling down the webpage until it cannot scroll no more
