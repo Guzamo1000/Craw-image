@@ -1,4 +1,5 @@
-from selenium import webdriver
+# https://www.youtube.com/watch?v=V_MV5EsdKRc
+from selenium import webdriver #pip install selenium
 from selenium.webdriver.common.keys import Keys
 import time
 
