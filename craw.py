@@ -4,10 +4,10 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 driver = webdriver.Chrome('path Chrome Driver')
-driver.get('link website')
+driver.get('link website') //google.com
 
 box = driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input') #element search in google
-box.send_keys('Keyword')
+box.send_keys('Keyword') //press keyword
 box.send_keys(Keys.ENTER)
 
 driver.find_element_by_xpath('//*[@id="hdtb-msb"]/div[1]/div/div[2]/a').click() #element image in google
@@ -32,6 +32,6 @@ while True:
 for i in range(1, 1000):
     try:
         # driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div['+str(i)+']/a[1]/div[1]/img').screenshot('E:\Code\Craw_image\image\giraffe ('+str(i)+').png')
-        driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div['+str(i)+']/a[1]/div[1]/img').screenshot('E:\Code\Craw_image\image\giraffe ('+str(i)+').png')
+        driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div['+str(i)+']/a[1]/div[1]/img').screenshot('path folder save image ('+str(i)+').png')
     except:
         pass
