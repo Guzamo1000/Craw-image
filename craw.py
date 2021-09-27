@@ -1,4 +1,5 @@
 # https://www.youtube.com/watch?v=V_MV5EsdKRc
+
 from selenium import webdriver #pip install selenium
 from selenium.webdriver.common.keys import Keys
 import time
@@ -8,7 +9,7 @@ driver.get('link website') //google.com
 
 box = driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input') #element search in google
 box.send_keys('Keyword') //press keyword
-box.send_keys(Keys.ENTER)
+box.send_keys(Keys.ENTER) //Enter
 
 driver.find_element_by_xpath('//*[@id="hdtb-msb"]/div[1]/div/div[2]/a').click() #element image in google
 
